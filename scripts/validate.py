@@ -5,7 +5,7 @@ import json
 import re
 import subprocess
 from pathlib import Path
-from distribution import SKILLS, PUBLIC_EXTRAS, package_paths, read_public_file
+from distribution import ASSETS, SKILLS, PUBLIC_EXTRAS, package_paths, read_public_file
 
 
 def validate(root,check_git=True):
@@ -14,7 +14,13 @@ def validate(root,check_git=True):
     paths=package_paths()
     contents={}
     for relative in paths:
-        try: contents[relative]=read_public_file(root,relative).decode('utf-8')
+        try:
+            data=read_public_file(root,relative)
+            if relative in ASSETS:
+                if not data.startswith(b'\xff\xd8\xff') or not data.endswith(b'\xff\xd9'):
+                    errors.append('Invalid JPEG asset: '+relative)
+            else:
+                contents[relative]=data.decode('utf-8')
         except (ValueError,OSError,UnicodeError) as exc: errors.append(str(exc))
     if errors: return errors
     try:
@@ -31,6 +37,21 @@ def validate(root,check_git=True):
                 target=interface[key].removeprefix('./')
                 if target not in paths: errors.append('Referenced asset is outside packaging allowlist: '+target)
     except (ValueError,KeyError,TypeError) as exc: errors.append('Manifest error: '+str(exc))
+    try:
+        marketplace=json.loads(contents['.agents/plugins/marketplace.json'])
+        if marketplace.get('name')!='intel-chatgpt': errors.append('Marketplace name must be intel-chatgpt.')
+        entries=marketplace.get('plugins',[])
+        if len(entries)!=1: errors.append('Marketplace must expose exactly one intel plugin.')
+        for entry in entries:
+            if entry.get('name')!=manifest.get('name'): errors.append('Marketplace entry must match the plugin identity.')
+            if 'pluginId' in entry: errors.append('Public marketplace must not bind to an existing private plugin.')
+            source=entry['source']
+            path=source.get('path','')
+            if source.get('source')!='local' or not path.startswith('./'):
+                errors.append('Marketplace source must use a relative local path.')
+            elif (root/path).resolve()!=root:
+                errors.append('Marketplace source must resolve to this repository root.')
+    except (ValueError,KeyError,TypeError,AttributeError) as exc: errors.append('Marketplace error: '+str(exc))
     for name in SKILLS:
         relative=f'skills/{name}/SKILL.md';text=contents[relative]
         parts=text.split('---',2)

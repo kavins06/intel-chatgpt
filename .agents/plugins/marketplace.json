@@ -1,0 +1,20 @@
+{
+  "name": "intel-chatgpt",
+  "interface": {
+    "displayName": "intel"
+  },
+  "plugins": [
+    {
+      "name": "intel",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -72,6 +72,14 @@ class SourceBoundaryTests(unittest.TestCase):
             self.assertEqual(set(archive.namelist()),{'intel/'+x for x in package_paths()})
             self.assertTrue(all(not x.endswith(('.pdf','.PDF')) and '/source-text/' not in x and '/local-sources/' not in x for x in archive.namelist()))
             self.assertEqual(sum(x.endswith('/SKILL.md') for x in archive.namelist()),10)
+            manifest=json.loads(archive.read('intel/plugin.json'))
+            interface=manifest['extensions']['com.openai']['interface']
+            for key in ('logo','composerIcon'):
+                asset=interface[key].removeprefix('./')
+                self.assertEqual(archive.read('intel/'+asset),(ROOT/asset).read_bytes())
+            marketplace=json.loads(archive.read('intel/.agents/plugins/marketplace.json'))
+            source=marketplace['plugins'][0]['source']['path']
+            self.assertIn('intel/'+str(Path(source)/'plugin.json'),archive.namelist())
             self.assertIsNone(archive.testzip())
 
 

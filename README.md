@@ -1,16 +1,50 @@
 # intel
 
+![intel logo](assets/intel-logo.jpg)
+
 **Research deeply. Challenge assumptions. Decide clearly.**
 
 intel is an open-source intelligence plugin built by Kavin Sakthivel. Ten coordinated skills turn difficult research questions into evidence-backed judgments, competing explanations, and practical decisions.
 
 Use it for company and market research, competitive strategy, geopolitical questions, stakeholder analysis, innovation, risk, forecasts, and executive briefs. Its core loop is **frame → investigate → challenge → decide**.
 
-**[Download intel v1.1.0](https://github.com/kavins06/intel-chatgpt/raw/refs/heads/main/downloads/intel-1.1.0.zip)** · [Example prompts](docs/examples.md) · [Source policy](SOURCE_NOTICE.md)
+**[Install from GitHub](#install-from-github)** · [Download intel v1.2.0](https://github.com/kavins06/intel-chatgpt/raw/refs/heads/main/downloads/intel-1.2.0.zip) · [Example prompts](docs/examples.md) · [Source policy](SOURCE_NOTICE.md)
 
-## Get started
+## Install from GitHub
 
-### ChatGPT with Plugin Creator
+This repository is a plugin marketplace containing intel. Add it once through a supported host. Workspace imports can sync daily; desktop/Codex users can refresh the marketplace explicitly. Pasting a link into an ordinary chat or importing a ZIP does not establish ongoing sync.
+
+### ChatGPT workspace
+
+A workspace admin can import the repository through **Admin → Plugins → Add → Import marketplace** using:
+
+| Field | Value |
+|---|---|
+| Source | `https://github.com/kavins06/intel-chatgpt` |
+| Path | Leave empty |
+| Branch, tag, or commit | `main` |
+
+Authorize GitHub access, review the import results, and make intel available to the intended workspace members. New marketplace connections check for changes daily. For an immediate refresh, use **Admin → Plugins → Marketplaces → intel → Sync now**. An existing ZIP-created copy stays separate from this import.
+
+### Desktop / Codex
+
+With a current Codex CLI that supports plugin marketplaces, run:
+
+```bash
+codex plugin marketplace add https://github.com/kavins06/intel-chatgpt.git --ref main
+```
+
+Restart the ChatGPT desktop app, open the Plugins Directory, select the **intel** marketplace, and install **intel**. To fetch later updates:
+
+```bash
+codex plugin marketplace upgrade intel-chatgpt
+```
+
+The marketplace identifier is `intel-chatgpt`; its display name is `intel`. Marketplace support and installation options vary by host and account. This is a GitHub marketplace, not a listing in the universal public Plugins Directory.
+
+Official setup references: [Workspace import and sync](https://learn.chatgpt.com/docs/enterprise/plugin-management) and [Marketplace packaging and desktop setup](https://developers.openai.com/plugins/build/plugins).
+
+### ZIP import with Plugin Creator
 
 1. Download the plugin ZIP above.
 2. In a ChatGPT account with Plugin Creator available, attach the ZIP and ask: **“Create a plugin from this intel archive.”**
@@ -18,7 +52,7 @@ Use it for company and market research, competitive strategy, geopolitical quest
 
    > Use intel to investigate this market deeply. Compare the strongest explanations, cite the evidence, and recommend what I should do next.
 
-Plugin availability and import options depend on your account and host. This repository does not grant access to a private ChatGPT plugin, paid research products, or background execution. You create your own copy from the public archive.
+ZIP import creates an independent copy and does not receive GitHub updates automatically. This repository does not grant access to a private ChatGPT plugin, paid research products, or background execution.
 
 ### Other compatible agents
 
@@ -77,12 +111,12 @@ python3 -m unittest discover -s tests -v
 python3 scripts/package.py
 ```
 
-The last command creates `dist/intel-1.1.0.zip`. The archive contains one `intel/` plugin directory. Packaging uses an explicit file allowlist: it excludes private local sources, downloaded readings, extracted corpora, environment files, and repository history.
+The last command creates `dist/intel-1.2.0.zip`. The archive contains one `intel/` plugin directory, including its logo and marketplace manifest. Packaging uses an explicit file allowlist: it excludes private local sources, downloaded readings, extracted corpora, environment files, and repository history.
 
 To reproduce the checked-in download:
 
 ```bash
-python3 scripts/package.py --output downloads/intel-1.1.0.zip
+python3 scripts/package.py --output downloads/intel-1.2.0.zip
 ```
 
 GitHub Actions runs validation and tests and uploads a fresh package artifact. Checks cover structure, references, public/private source separation, unavailable-source behavior, local import/retrieval, and evidence-record validation. These checks are not a comprehensive empirical benchmark of analytical performance.
@@ -91,7 +125,9 @@ GitHub Actions runs validation and tests and uploads a fresh package artifact. C
 
 Edit workflow instructions in `skills/<name>/SKILL.md`, update shared references in `skills/intel/references/`, and adjust presentation metadata in `plugin.json`. Keep skill names aligned with their directory names. When changing a release, bump the version, rebuild the download, and update its links. Run validation and tests before proposing changes.
 
-For a logo, add an appropriately licensed image inside the plugin and set `extensions.com.openai.interface.composerIcon` and `logo` to its relative path. Also add that exact asset to the packaging allowlist in `scripts/distribution.py` and validate the bundle. No logo is bundled in this release.
+The supplied image at `assets/intel-logo.jpg` is used for both `extensions.com.openai.interface.composerIcon` and `logo`. To change it, replace that asset or update both paths and the exact asset entry in `scripts/distribution.py`, then rebuild the package. See the image notice in [SOURCE_NOTICE.md](SOURCE_NOTICE.md).
+
+The marketplace is defined in `.agents/plugins/marketplace.json`. Its local source path `./` resolves to the repository root, where the portable `plugin.json` and all ten skills live. Preserve the marketplace and plugin names when publishing updates.
 
 Report issues or propose improvements through this repository. Do not include private research inputs, credentials, or licensed source documents in issues or pull requests.
 

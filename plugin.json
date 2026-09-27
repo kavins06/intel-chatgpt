@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "intel",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Ten evidence-led intelligence workflows for research, strategy, diagnosis, foresight, innovation, risk, and decision making. Includes reusable methods and optional private source retrieval.",
   "author": {
     "name": "Kavin Sakthivel"
@@ -13,6 +13,8 @@
         "shortDescription": "Research deeply. Challenge assumptions. Decide clearly.",
         "longDescription": "Turn complex questions into defensible decisions with ten coordinated workflows: research, diagnosis, competitive strategy, stakeholder intelligence, forecasting, innovation, risk, adversarial review, and decision briefs. Includes an intelligence coordinator, evidence standards, reusable templates, source-retrieval utilities, and a reference bibliography. Bring your own documents and use the research tools available in your host. Third-party source documents are not redistributed.",
         "developerName": "Kavin Sakthivel",
+        "composerIcon": "./assets/intel-logo.jpg",
+        "logo": "./assets/intel-logo.jpg",
         "category": "Productivity",
         "capabilities": [
           "Interactive"
