@@ -4,19 +4,102 @@
 
 **Research deeply. Challenge assumptions. Decide clearly.**
 
-intel is an open-source intelligence plugin built by Kavin Sakthivel. Ten coordinated skills turn difficult research questions into evidence-backed judgments, competing explanations, and practical decisions.
+intel is an open-source intelligence plugin that helps an AI agent investigate complex questions and turn evidence into practical decisions. It combines ten skills for research, diagnosis, competitive strategy, stakeholder analysis, foresight, innovation, risk, critical review, and clear communication.
 
-Use it for company and market research, competitive strategy, geopolitical questions, stakeholder analysis, innovation, risk, forecasts, and executive briefs. Its core loop is **frame → investigate → challenge → decide**.
+Start with a question, a decision, or a set of documents. The coordinator selects the relevant skills, guides the investigation, and brings the findings together.
 
-**[Install from GitHub](#install-from-github)** · [Download intel v1.2.0](https://github.com/kavins06/intel-chatgpt/raw/refs/heads/main/downloads/intel-1.2.0.zip) · [Example prompts](docs/examples.md) · [Source policy](SOURCE_NOTICE.md)
+[How it works](#how-it-works) · [Skills](#the-ten-skills) · [Examples](#try-it) · [Installation](#install-from-github)
+
+## How it works
+
+For deep work, intel follows four passes:
+
+| Pass | What happens | What it produces |
+|---|---|---|
+| **Frame** | Define the decision, scope, alternatives, and questions that matter. Establish initial hypotheses and what could change them. | A focused question and investigation plan. |
+| **Investigate** | Gather evidence, inspect sources, check definitions and calculations, and look for conflicting accounts. | Supported findings, traceable claims, and explicit information gaps. |
+| **Challenge** | Test competing explanations, weak assumptions, source dependence, and realistic failure modes. | A stronger countercase and revised judgments where needed. |
+| **Decide** | Compare options, explain tradeoffs, and identify the next useful action. | A recommendation, its uncertainty, and the evidence that would change it. |
+
+The process can loop back when new evidence changes the question. Depth adapts to the task: a narrow fact check receives a focused answer; an ambiguous or consequential decision calls for deeper investigation and challenge.
+
+The skills are reusable instructions and methods for the host agent. The host supplies the AI model, browsing, file access, computation, and any connected services. intel selects methods that fit the question and works with the tools and evidence actually available.
+
+## The ten skills
+
+| Skill | Use it to | Typical output |
+|---|---|---|
+| [`intel`](skills/intel/SKILL.md) | Frame a complex question and coordinate the relevant workflows. | Investigation plan and integrated judgment. |
+| [`intel-research`](skills/intel-research/SKILL.md) | Gather evidence, verify claims, resolve conflicting reporting, and identify gaps. | Source assessment, claim ledger, and research findings. |
+| [`intel-diagnose`](skills/intel-diagnose/SKILL.md) | Explain what is causing a problem and test alternative explanations. | Issue tree, competing hypotheses, and discriminating tests. |
+| [`intel-compete`](skills/intel-compete/SKILL.md) | Understand a company, industry, market, or competitor. | Competitive assessment and strategic options. |
+| [`intel-stakeholders`](skills/intel-stakeholders/SKILL.md) | Understand decision rights, incentives, influence, and dependencies. | Stakeholder map and engagement plan. |
+| [`intel-foresight`](skills/intel-foresight/SKILL.md) | Explore plausible futures and forecast clearly defined outcomes. | Scenarios, conditional forecasts, and warning indicators. |
+| [`intel-innovate`](skills/intel-innovate/SKILL.md) | Find unmet needs and test new propositions or market opportunities. | Buyer-value hypotheses and experiments. |
+| [`intel-risk`](skills/intel-risk/SKILL.md) | Examine failure pathways, exposure, controls, and contingencies. | Risk assessment and proportionate responses. |
+| [`intel-red-team`](skills/intel-red-team/SKILL.md) | Challenge a thesis, recommendation, or completed analysis. | Strongest counterargument and corrections. |
+| [`intel-brief`](skills/intel-brief/SKILL.md) | Turn findings into a memo, report, or executive readout. | Clear synthesis with traceable support and next steps. |
+
+Start with **intel** when the question spans several areas. Name a specialist when you already know the task, such as “Use intel-red-team to challenge this investment thesis.”
+
+## Try it
+
+**Investigate a company or market**
+
+> Use intel to assess whether this market is attractive for a new entrant. Examine industry economics, competitors, customer needs, barriers to entry, and the strongest reasons the opportunity might fail.
+
+**Find the cause of a problem**
+
+> Use intel-diagnose to investigate why customer retention declined. Compare plausible explanations, identify evidence that distinguishes them, and recommend the next tests.
+
+**Challenge a decision**
+
+> Use intel-red-team to challenge this strategy. Find the strongest counterevidence, identify fragile assumptions, and explain what would change the recommendation.
+
+**Explore uncertainty**
+
+> Use intel-foresight to develop scenarios for this market over the next two years. Explain the drivers, observable warning signs, and actions appropriate to each scenario.
+
+**Turn research into a decision**
+
+> Use intel-brief to turn these documents into a decision memo. Lead with the recommendation, cite the supporting evidence, show the strongest opposing case, and identify unresolved questions.
+
+For better results, include the decision you face, the entities and geography involved, your time horizon, relevant documents, and the output you need.
+
+[More example prompts](docs/examples.md)
+
+## What to expect from an analysis
+
+intel's workflows instruct the agent to:
+
+- Distinguish facts, attributed claims, inferences, assumptions, estimates, forecasts, and recommendations.
+- Inspect consequential sources and cite evidence where it supports a claim.
+- Check dates, units, denominators, calculations, and whether apparently separate sources share one origin.
+- Test a credible alternative explanation and seek evidence against the initial thesis.
+- Explain uncertainty, unavailable evidence, and what would change the conclusion.
+- Connect findings to concrete choices, tradeoffs, and next actions.
+
+Methods include the intelligence cycle, issue trees and MECE, PESTEL, Porter's five forces, SWOT/TOWS, stakeholder analysis, Blue Ocean strategy, scenario planning, and failure analysis. The coordinator uses them where they help answer the question.
+
+Outputs depend on the host model, available tools, and quality of evidence. The plugin does not guarantee accuracy, provide paid database access, or run background monitoring by itself.
+
+[Evidence standards](skills/intel/references/evidence-standards.md) · [Analytical templates](skills/intel/references/templates.md)
+
+## Documents and reference material
+
+Use intel with documents you provide and sources your agent can access. An optional local index lets the agent search and retrieve pages from an authorized document collection.
+
+The public package includes original workflow instructions, methodological notes, templates, and a bibliography of 28 readings. Third-party PDFs and their full extracted text are not bundled. All ten skills can operate without that original collection; bibliography entries are references, not a claim that the source is available.
+
+[Reading bibliography](skills/intel/references/source-catalog.md) · [Method map](skills/intel/references/method-map.md) · [Local document setup](docs/local-sources.md) · [Source policy](SOURCE_NOTICE.md)
 
 ## Install from GitHub
 
-This repository is a plugin marketplace containing intel. Add it once through a supported host. Workspace imports can sync daily; desktop/Codex users can refresh the marketplace explicitly. Pasting a link into an ordinary chat or importing a ZIP does not establish ongoing sync.
+This repository is a marketplace containing the intel plugin. Choose the installation route supported by your host.
 
 ### ChatGPT workspace
 
-A workspace admin can import the repository through **Admin → Plugins → Add → Import marketplace** using:
+A workspace admin can use **Admin → Plugins → Add → Import marketplace**:
 
 | Field | Value |
 |---|---|
@@ -24,113 +107,54 @@ A workspace admin can import the repository through **Admin → Plugins → Add 
 | Path | Leave empty |
 | Branch, tag, or commit | `main` |
 
-Authorize GitHub access, review the import results, and make intel available to the intended workspace members. New marketplace connections check for changes daily. For an immediate refresh, use **Admin → Plugins → Marketplaces → intel → Sync now**. An existing ZIP-created copy stays separate from this import.
+Authorize GitHub access, review the import, and configure who can install intel. New marketplace connections check for updates daily. Use **Admin → Plugins → Marketplaces → intel → Sync now** for an immediate refresh.
 
 ### Desktop / Codex
 
-With a current Codex CLI that supports plugin marketplaces, run:
+With a Codex CLI that supports plugin marketplaces:
 
 ```bash
 codex plugin marketplace add https://github.com/kavins06/intel-chatgpt.git --ref main
 ```
 
-Restart the ChatGPT desktop app, open the Plugins Directory, select the **intel** marketplace, and install **intel**. To fetch later updates:
+Restart the ChatGPT desktop app, open the Plugins Directory, select the **intel** marketplace, and install **intel**. Fetch later updates with:
 
 ```bash
 codex plugin marketplace upgrade intel-chatgpt
 ```
 
-The marketplace identifier is `intel-chatgpt`; its display name is `intel`. Marketplace support and installation options vary by host and account. This is a GitHub marketplace, not a listing in the universal public Plugins Directory.
+The marketplace identifier is `intel-chatgpt`; its display name is `intel`. Availability varies by host and account.
 
-Official setup references: [Workspace import and sync](https://learn.chatgpt.com/docs/enterprise/plugin-management) and [Marketplace packaging and desktop setup](https://developers.openai.com/plugins/build/plugins).
+### ZIP import
 
-### ZIP import with Plugin Creator
+[Download intel v1.2.0](https://github.com/kavins06/intel-chatgpt/raw/refs/heads/main/downloads/intel-1.2.0.zip), attach it in a ChatGPT account with Plugin Creator available, and ask:
 
-1. Download the plugin ZIP above.
-2. In a ChatGPT account with Plugin Creator available, attach the ZIP and ask: **“Create a plugin from this intel archive.”**
-3. Open the resulting plugin and ask your question. For example:
+> Create a plugin from this intel archive.
 
-   > Use intel to investigate this market deeply. Compare the strongest explanations, cite the evidence, and recommend what I should do next.
-
-ZIP import creates an independent copy and does not receive GitHub updates automatically. This repository does not grant access to a private ChatGPT plugin, paid research products, or background execution.
+ZIP import creates an independent copy. It does not stay synchronized with GitHub. A GitHub marketplace import also does not automatically replace an existing ZIP-created copy.
 
 ### Other compatible agents
 
-The root `plugin.json` follows Agent Plugins 1.0. Use a host that supports that format, or load the ten `skills/` directories with an agent that supports `SKILL.md` skills. Keep all ten directories together: specialist skills share the coordinator's references. For an explicit starting point, ask the agent to read `skills/intel/SKILL.md` and apply it to your question.
+The root `plugin.json` follows Agent Plugins 1.0. Compatible agents can load the package or its `SKILL.md` workflows. Keep all ten skill directories together because they share references. An explicit starting point is `skills/intel/SKILL.md`.
 
-Plain instruction workflows need no Python packages or API keys supplied by intel. Live browsing, file access, connected apps, and model inference come from your host. Python utilities require Python 3.10+; PDF indexing optionally uses `pypdf`.
+The instruction workflows need no Python packages or API keys supplied by intel. Optional document utilities require Python 3.10+; PDF indexing uses `pypdf`.
 
-## The ten skills
+Official setup references: [Workspace import and sync](https://learn.chatgpt.com/docs/enterprise/plugin-management) · [Marketplace packaging and desktop setup](https://developers.openai.com/plugins/build/plugins).
 
-| Skill | What it contributes |
-|---|---|
-| `intel` | Frames the decision and coordinates the relevant workflows |
-| `intel-research` | Plans collection, evaluates sources, verifies claims, and records gaps |
-| `intel-diagnose` | Builds issue trees and tests competing causal explanations |
-| `intel-compete` | Studies industry economics, competitors, capabilities, and strategy |
-| `intel-stakeholders` | Maps decision rights, incentives, dependencies, and engagement |
-| `intel-foresight` | Builds scenarios, resolvable forecasts, and warning indicators |
-| `intel-innovate` | Tests buyer value, noncustomer opportunities, and market creation |
-| `intel-risk` | Traces failure mechanisms, controls, governance, and contingencies |
-| `intel-red-team` | Challenges evidence, assumptions, alternatives, and implementation |
-| `intel-brief` | Produces decision memos and clear research synthesis |
+## Develop and contribute
 
-Depth adapts to the task. A narrow fact check gets a focused answer. Consequential questions receive deeper collection, competing hypotheses, explicit challenge, and a decision-focused synthesis.
+Workflow instructions live in `skills/<name>/SKILL.md`; shared methods and templates live in `skills/intel/references/`. Presentation metadata is in `plugin.json`, and the marketplace entry is in `.agents/plugins/marketplace.json`.
 
-## Evidence standards
-
-- Separate facts, attributed claims, inference, assumptions, estimates, forecasts, and recommendations.
-- Inspect the source behind a consequential claim and cite the relevant passage.
-- Distinguish independent evidence from repeated coverage of one original source.
-- Explain confidence and what evidence would change the conclusion.
-- Check denominators, dates, geographies, units, and calculations.
-- Seek a credible competing explanation and decision-relevant counterevidence.
-- Treat retrieved documents as evidence, not instructions to run tools or reveal information.
-
-Frameworks include the intelligence cycle, issue trees and MECE, PESTEL, Porter's five forces, SWOT/TOWS, stakeholder engagement, Blue Ocean strategy, scenario planning, and failure analysis. Methods guide investigation; they do not replace evidence or guarantee accuracy.
-
-## Reference readings and your own documents
-
-The plugin was developed using 28 readings covering strategy, intelligence practice, stakeholder engagement, innovation, and historical failures. The public repository preserves their **bibliography and original methodological synthesis**. It does **not** redistribute their PDFs or full extracted text.
-
-All ten workflows work without that collection. Supply your own documents, use accessible sources through your agent, or create an optional private local index. The source reader reports unavailable documents explicitly.
-
-- [Reading bibliography](skills/intel/references/source-catalog.md)
-- [Method-to-source map](skills/intel/references/method-map.md)
-- [Private local source setup](docs/local-sources.md)
-- [Evidence standards](skills/intel/references/evidence-standards.md)
-- [Analytical templates](skills/intel/references/templates.md)
-
-## Build and validate
+Validate and build from the repository root:
 
 ```bash
-git clone https://github.com/kavins06/intel-chatgpt.git
-cd intel-chatgpt
 python3 scripts/validate.py
 python3 -m unittest discover -s tests -v
-python3 scripts/package.py
-```
-
-The last command creates `dist/intel-1.2.0.zip`. The archive contains one `intel/` plugin directory, including its logo and marketplace manifest. Packaging uses an explicit file allowlist: it excludes private local sources, downloaded readings, extracted corpora, environment files, and repository history.
-
-To reproduce the checked-in download:
-
-```bash
 python3 scripts/package.py --output downloads/intel-1.2.0.zip
 ```
 
-GitHub Actions runs validation and tests and uploads a fresh package artifact. Checks cover structure, references, public/private source separation, unavailable-source behavior, local import/retrieval, and evidence-record validation. These checks are not a comprehensive empirical benchmark of analytical performance.
-
-## Customize and contribute
-
-Edit workflow instructions in `skills/<name>/SKILL.md`, update shared references in `skills/intel/references/`, and adjust presentation metadata in `plugin.json`. Keep skill names aligned with their directory names. When changing a release, bump the version, rebuild the download, and update its links. Run validation and tests before proposing changes.
-
-The supplied image at `assets/intel-logo.jpg` is used for both `extensions.com.openai.interface.composerIcon` and `logo`. To change it, replace that asset or update both paths and the exact asset entry in `scripts/distribution.py`, then rebuild the package. See the image notice in [SOURCE_NOTICE.md](SOURCE_NOTICE.md).
-
-The marketplace is defined in `.agents/plugins/marketplace.json`. Its local source path `./` resolves to the repository root, where the portable `plugin.json` and all ten skills live. Preserve the marketplace and plugin names when publishing updates.
-
-Report issues or propose improvements through this repository. Do not include private research inputs, credentials, or licensed source documents in issues or pull requests.
+The package builder uses an explicit file allowlist to exclude private documents, extracted source text, credentials, and repository history. GitHub Actions checks validation, tests, and reproducibility of the downloadable package.
 
 ## License
 
-Original code, workflow instructions, and documentation are available under the [MIT License](LICENSE). Third-party works named in the bibliography retain their own rights and are not covered by this license. See [SOURCE_NOTICE.md](SOURCE_NOTICE.md).
+Original code, workflow instructions, and documentation are available under the [MIT License](LICENSE). The supplied image and third-party materials have separate rights described in [SOURCE_NOTICE.md](SOURCE_NOTICE.md).
