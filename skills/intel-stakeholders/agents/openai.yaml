@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stakeholder intelligence"
+  short_description: "Map decision rights, incentives, and engagement"
+  default_prompt: "Use $intel-stakeholders to map the people and groups that can influence this decision."

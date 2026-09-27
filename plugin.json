@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "intel",
+  "version": "1.1.0",
+  "description": "Ten evidence-led intelligence workflows for research, strategy, diagnosis, foresight, innovation, risk, and decision making. Includes reusable methods and optional private source retrieval.",
+  "author": {
+    "name": "Kavin Sakthivel"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "intel",
+        "shortDescription": "Research deeply. Challenge assumptions. Decide clearly.",
+        "longDescription": "Turn complex questions into defensible decisions with ten coordinated workflows: research, diagnosis, competitive strategy, stakeholder intelligence, forecasting, innovation, risk, adversarial review, and decision briefs. Includes an intelligence coordinator, evidence standards, reusable templates, source-retrieval utilities, and a reference bibliography. Bring your own documents and use the research tools available in your host. Third-party source documents are not redistributed.",
+        "developerName": "Kavin Sakthivel",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "Investigate this decision thoroughly. Compare the strongest explanations, cite the evidence, and recommend what I should do.",
+          "Analyze this company or market: competitive forces, stakeholder incentives, emerging risks, and opportunities others may be missing.",
+          "Challenge my thesis. Find the best counterevidence, test the assumptions, and tell me what would change your conclusion."
+        ]
+      }
+    }
+  }
+}

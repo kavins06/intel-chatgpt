@@ -1,0 +1,4 @@
+interface:
+  display_name: "Competitive strategy"
+  short_description: "Understand rivals, industry economics, and options"
+  default_prompt: "Use $intel-compete to assess this company or market and recommend a defensible strategy."

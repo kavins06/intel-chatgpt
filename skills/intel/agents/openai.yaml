@@ -1,0 +1,4 @@
+interface:
+  display_name: "intel"
+  short_description: "Coordinate evidence-led intelligence and decisions"
+  default_prompt: "Use $intel to investigate a difficult decision and recommend an evidence-backed next step."

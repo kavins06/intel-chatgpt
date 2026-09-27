@@ -1,0 +1,4 @@
+interface:
+  display_name: "Innovation strategy"
+  short_description: "Design buyer value and test market opportunities"
+  default_prompt: "Use $intel-innovate to find a market opportunity and design a test of real demand."

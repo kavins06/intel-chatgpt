@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adversarial review"
+  short_description: "Challenge a thesis and test whether it survives"
+  default_prompt: "Use $intel-red-team to find the strongest countercase and stress-test this recommendation."

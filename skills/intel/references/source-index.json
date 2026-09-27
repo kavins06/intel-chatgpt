@@ -1,0 +1,470 @@
+[
+  {
+    "id": "S01",
+    "title": "Lehman Brothers and the Reckless Art of Leveraging",
+    "author": "BBC Studios Americas / Gale video transcript",
+    "date": "2015-11-24",
+    "pages": 1,
+    "tags": [
+      "risk",
+      "finance",
+      "Lehman"
+    ],
+    "use": "Brief account of leverage and property exposure.",
+    "limitations": "Machine-generated transcript; simplified language and historical ratios require verification.",
+    "suggested_pages": "1",
+    "sha256": "e48c421cbe9635611d6a0f09ff7b94016bb692fcc2d88e55f55d68f3d6a0a0d5",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S02",
+    "title": "The competitive forces that shape Australian medical education: An industry analysis using Porter’s five forces framework",
+    "author": "Marian Mahat; International Journal of Educational Management",
+    "date": "2019",
+    "pages": 13,
+    "tags": [
+      "competition",
+      "five-forces",
+      "education"
+    ],
+    "use": "An applied industry analysis based on interviews in Australian medical schools.",
+    "limitations": "Context-specific qualitative study; do not treat as universal causal proof.",
+    "suggested_pages": "1-10",
+    "sha256": "9749d6738861e42b9979762632b35d4c9980056ac4d239a03268984d455ebb23",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S03",
+    "title": "Understanding Porter’s 5 Forces vs. PESTLE Analysis",
+    "author": "Investopedia via Newstex / ProQuest",
+    "date": "2019-03-05; dateline 2019-02-27",
+    "pages": 4,
+    "tags": [
+      "competition",
+      "PESTEL"
+    ],
+    "use": "Distinguishes industry competition from macroenvironmental analysis.",
+    "limitations": "Secondary explainer; export/update dates differ from publication.",
+    "suggested_pages": "1-3",
+    "sha256": "93b9530c7658c9ac76e9a8a368261935db3a2942da35f52e209f4c45403b56e8",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S04",
+    "title": "U.S. Withdrawal from Afghanistan",
+    "author": "U.S. administration retrospective",
+    "date": "Publication date not stated in supplied text",
+    "pages": 12,
+    "tags": [
+      "risk",
+      "geopolitics",
+      "Afghanistan"
+    ],
+    "use": "Official narrative of withdrawal decisions, constraints, and lessons.",
+    "limitations": "Interested official account; compare with S12/S13 and underlying contemporaneous records.",
+    "suggested_pages": "1-12",
+    "sha256": "4198f470f54aca01c5b2d351684ed28ed32bc3d9561dd95d7c2676988f54477c",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S05",
+    "title": "Porter’s 5 Forces on Under Armour (UA)",
+    "author": "Investopedia via Newstex / ProQuest",
+    "date": "2019-01-26",
+    "pages": 4,
+    "tags": [
+      "competition",
+      "five-forces"
+    ],
+    "use": "Worked application to sports apparel and company positioning.",
+    "limitations": "Historical company and market figures; not a current investment assessment.",
+    "suggested_pages": "1-3",
+    "sha256": "1650f1cf8bf58481e7ecb711815c5b6fa2f95704549686df6b19419ad6b5ebff",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S06",
+    "title": "Apple Inc — Company Profile",
+    "author": "MarketLine",
+    "date": "2024-03-25",
+    "pages": 9,
+    "tags": [
+      "company",
+      "SWOT"
+    ],
+    "use": "Company overview and SWOT format example.",
+    "limitations": "Licensed historical profile; current fundamentals require new sources.",
+    "suggested_pages": "3-8",
+    "sha256": "0a887260b26f59180bad70d1be0264a989cc20a8bf9a7725432e0b904988903f",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S07",
+    "title": "Microsoft Corporation — Company Profile",
+    "author": "MarketLine",
+    "date": "2024-03-21",
+    "pages": 8,
+    "tags": [
+      "company",
+      "SWOT"
+    ],
+    "use": "Company overview and SWOT format example.",
+    "limitations": "Historical; overview/table weakness wording differs. Inspect the specific supporting section.",
+    "suggested_pages": "3-7",
+    "sha256": "3b551822459cdb25a0d845ef0e89d4bde8e322e0bedafc40db1d09752d181c9e",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S08",
+    "title": "Three avenues of innovation for new market creation and growth",
+    "author": "W. Chan Kim and Renée Mauborgne; Strategy & Leadership 51(5), 11-15",
+    "date": "2023",
+    "pages": 6,
+    "tags": [
+      "innovation",
+      "blue-ocean",
+      "nondisruption"
+    ],
+    "use": "Authors distinguish improving an existing problem, reframing it, and solving a new problem beyond existing industry boundaries.",
+    "limitations": "Conceptual strategic framework; examples do not prove demand for a new idea. DOI 10.1108/SL-07-2023-0071.",
+    "suggested_pages": "1-5",
+    "sha256": "d32881807f0e246c71ec78947d21756deb7061641fe2f727af14facef9491cdd",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S09",
+    "title": "Stakeholder Analysis and Engagement Plan — Sixaola River Basin",
+    "author": "Pascal O. Girot P. and Marta Pérez de Madrid; UNDP project annex",
+    "date": "2020-09",
+    "pages": 28,
+    "tags": [
+      "stakeholders",
+      "engagement"
+    ],
+    "use": "Applied mapping of influence, interest, involvement, inclusion, and engagement activities.",
+    "limitations": "A specific Costa Rica-Panama watershed project, not a universal corporate power map.",
+    "suggested_pages": "3-6,8-18",
+    "sha256": "9e04355fc0cd2e997c68f5db4b7611a4780383e17c858ef31b55f854dd3cb179",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S10",
+    "title": "The 5 Ways to be MECE in Case Interviews",
+    "author": "Bruno Nogueira; Crafting Cases",
+    "date": "2017-11-21; captured 2026-02-28",
+    "pages": 6,
+    "tags": [
+      "diagnosis",
+      "MECE"
+    ],
+    "use": "Introduction motivating problem-specific structure over memorized frameworks.",
+    "limitations": "Only introductory Part 1 is supplied; the linked Part 2 is absent. Use S25 for detailed techniques.",
+    "suggested_pages": "1-5",
+    "sha256": "eab61c40ff7d812bbb4d318ec77f3651891cb0224508275960c36f067f06e29d",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S11",
+    "title": "Principles for Stakeholder Engagement",
+    "author": "United Nations Evaluation Group; working paper",
+    "date": "2017-11",
+    "pages": 20,
+    "tags": [
+      "stakeholders",
+      "engagement",
+      "evaluation"
+    ],
+    "use": "Seven principles covering identification, inclusion, early engagement, communication, ethics, and feedback.",
+    "limitations": "Evaluation guidance; adapt deliberately to commercial contexts.",
+    "suggested_pages": "3-8,15-18",
+    "sha256": "fd02048d21e50424b882b836668662ae67939d7e3b5a621096e017b196c8e8bf",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S12",
+    "title": "Ex-US generals who oversaw Afghan exit describe chaos and challenges of withdrawal",
+    "author": "Max Matza; BBC News",
+    "date": "2024-03-19; captured 2026-02-28",
+    "pages": 7,
+    "tags": [
+      "risk",
+      "Afghanistan",
+      "geopolitics"
+    ],
+    "use": "Reports testimony by Mark Milley and Kenneth McKenzie.",
+    "limitations": "Secondary report of testimony; obtain hearing records for exact disputed claims.",
+    "suggested_pages": "1-4",
+    "sha256": "e126183b49c21edf54a25518da970ba2319f481037356b5ab3ba4458c9823491",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S13",
+    "title": "US State Department report details damning failings around chaotic Afghanistan withdrawal",
+    "author": "Jennifer Hansler and Kylie Atwood; CNN",
+    "date": "2023-06-30; captured 2026-02-28",
+    "pages": 11,
+    "tags": [
+      "risk",
+      "Afghanistan",
+      "geopolitics"
+    ],
+    "use": "Reports on the State Department After Action Review.",
+    "limitations": "Secondary reporting; page 1 is mostly layout, substantive article starts later.",
+    "suggested_pages": "2-8",
+    "sha256": "4be7c63cc048bb22b485ea07e8923ef4f95a922aa1c33159968c742ba0daa44d",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S14",
+    "title": "What Is a SWOT Analysis? (And When to Use It)",
+    "author": "Skye Schooley; Business News Daily",
+    "date": "Updated 2026-02-09; captured 2026-02-28",
+    "pages": 9,
+    "tags": [
+      "SWOT",
+      "strategy"
+    ],
+    "use": "Practical SWOT explanation and applications.",
+    "limitations": "Commercial explainer; check unsupported origin and success-rate claims before repeating.",
+    "suggested_pages": "1-7",
+    "sha256": "689a5103729650518101a6de12ba39ac270393e4b14a11d7fad5a1721aa9dae4",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S15",
+    "title": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach",
+    "author": "The Guardian; supplied article capture",
+    "date": "2018-03-17 from captured article URL; captured 2026-02-28",
+    "pages": 7,
+    "tags": [
+      "ethics",
+      "data",
+      "privacy",
+      "risk"
+    ],
+    "use": "Investigative case on collection, consent, onward use, and oversight.",
+    "limitations": "Capture includes overlays and interrupted text; do not assume completeness or established targeting efficacy.",
+    "suggested_pages": "1-6",
+    "sha256": "e2999f369e437c79812499b42547cb4d5a616b3319ebc4d56d8050e8031872fd",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S16",
+    "title": "Report of Anton R. Valukas, Examiner — Volume 1 of 9",
+    "author": "U.S. Bankruptcy Court, Southern District of New York; examiner report",
+    "date": "2010-03-11",
+    "pages": 239,
+    "tags": [
+      "risk",
+      "finance",
+      "Lehman",
+      "governance"
+    ],
+    "use": "Introduction, executive summary, procedural background, and risk analysis.",
+    "limitations": "Only Volume 1 supplied. Contents reference absent volumes. Examiner conclusions are not final judicial liability findings.",
+    "suggested_pages": "44-65,83-239",
+    "sha256": "6ba6d2f6178e1066a46c720297286fdf7d39344b2270386aa33d4708be1df637",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S17",
+    "title": "What Is a PEST Analysis?",
+    "author": "Mark Fairlie; Business News Daily",
+    "date": "Updated 2026-02-09; captured 2026-02-28",
+    "pages": 13,
+    "tags": [
+      "PESTEL",
+      "strategy"
+    ],
+    "use": "Practical political, economic, social, and technological analysis.",
+    "limitations": "Commercial explainer; distinguish PEST from the legal/environmental expansion.",
+    "suggested_pages": "1-9",
+    "sha256": "14ce12cff9d14cb580457f7e4e599b3dfc04f9d4c7b43874a5b86d9261c8b731",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S18",
+    "title": "Lehman’s Shell Game: Poor Risk Management",
+    "author": "Saurav K. Dutta, Dennis Caplan, and Raef Lawson; Strategic Finance",
+    "date": "2010-08",
+    "pages": 7,
+    "tags": [
+      "risk",
+      "finance",
+      "Lehman",
+      "governance"
+    ],
+    "use": "Discusses leverage presentation, Repo 105, funding mismatch, ethics, and governance.",
+    "limitations": "Secondary accounting analysis; OCR may corrupt tables. Verify ratios visually and against primary evidence.",
+    "suggested_pages": "1-7",
+    "sha256": "c88f6e85923f1780dc16ee6331a6cef33847b3eef98b169eedfd96f7d429aba3",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S19",
+    "title": "Everybody Matters — documentary transcript",
+    "author": "Fifth Floor Vault Films referenced in transcript; supplied Google Docs capture",
+    "date": "Undated",
+    "pages": 10,
+    "tags": [
+      "stakeholders",
+      "leadership",
+      "culture"
+    ],
+    "use": "Qualitative leadership account concerning care, listening, trust, and workplace dignity.",
+    "limitations": "Incomplete speaker/date metadata; quoted statistics and causal claims require original studies.",
+    "suggested_pages": "1-9",
+    "sha256": "f033a07e0ede822d5fbfee5a84e1805d87497b192283aa7b9bb69fa10c6f7b6d",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S20",
+    "title": "How Competitive Forces Shape Strategy",
+    "author": "Michael E. Porter; Harvard Business Review",
+    "date": "1979-03/04",
+    "pages": 10,
+    "tags": [
+      "competition",
+      "five-forces"
+    ],
+    "use": "Foundational supplied article on competitive forces and industry profit potential.",
+    "limitations": "Historical examples; multi-column embedded extraction contains ordering/OCR artifacts. Inspect the original when precise wording matters.",
+    "suggested_pages": "1-9",
+    "sha256": "224f3891c780177f79fce1b94c5c847f934740864dd2f493405692844c005489",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S21",
+    "title": "The competitive intelligence cycle in 5 steps",
+    "author": "Alex Walton and Charley Gale; Competitive Intelligence Alliance",
+    "date": "2025-08-04; captured 2026-02-28",
+    "pages": 13,
+    "tags": [
+      "intelligence-cycle",
+      "research"
+    ],
+    "use": "Orientation, gathering, analysis/processing, reporting, action, and iteration.",
+    "limitations": "Practitioner explainer; its cycle is one model, not a universal standard.",
+    "suggested_pages": "2-10",
+    "sha256": "e8ea3bfa9c281b52f99cb94ebced734b96de538b469876bfec6b7cd5f8881d0a",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S22",
+    "title": "What is competitive intelligence? / Competitive Intelligence: What It Is and How to Do It",
+    "author": "Alex Walton; Competitive Intelligence Alliance",
+    "date": "2025-08-15; captured 2026-02-28",
+    "pages": 32,
+    "tags": [
+      "intelligence-cycle",
+      "research",
+      "competition"
+    ],
+    "use": "Practical introduction connecting competitor research, customer needs, and business decisions.",
+    "limitations": "Practitioner/vendor context; assess tool and outcome claims independently.",
+    "suggested_pages": "2-25",
+    "sha256": "28062ad96fb1e9337a211863ee2e5b23b7709e84aec373564664ec45adccc030",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S23",
+    "title": "The obscure federal intelligence bureau that got Vietnam, Iraq, and Ukraine right",
+    "author": "Dylan Matthews; Vox",
+    "date": "2024-05-28; captured 2026-02-28",
+    "pages": 21,
+    "tags": [
+      "dissent",
+      "geopolitics",
+      "tradecraft"
+    ],
+    "use": "Profile of INR expertise, institutional memory, and dissent.",
+    "limitations": "Selected journalistic account, not an audited forecasting record; avoid repeating accuracy superlatives as measured fact.",
+    "suggested_pages": "2-16",
+    "sha256": "a64d4236b6f73d8c46627f30f94a5981cf1ae8423002bbedd0ec0fed21e72776",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S24",
+    "title": "A Comparative PESTEL Analysis of Canada and China’s Management of Energy Markets",
+    "author": "Kevin Zentner, Alycia Fritze, Andrea Kloster, Larysa Romaniuk; Journal of Applied Business and Economics 22(12)",
+    "date": "2020",
+    "pages": 22,
+    "tags": [
+      "PESTEL",
+      "energy",
+      "geopolitics"
+    ],
+    "use": "Applied macroenvironmental analysis of energy trade relationships.",
+    "limitations": "Historical sector context; inspect charts and refresh policy and market evidence.",
+    "suggested_pages": "1-18",
+    "sha256": "d915ac50e3d8954daed00df0a946e56525d4e6aae6d97781109201716c470b0c",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S25",
+    "title": "Issue Trees: The Definitive Guide",
+    "author": "Bruno Nogueira; Crafting Cases",
+    "date": "Publication date not established; captured 2026-02-28",
+    "pages": 72,
+    "tags": [
+      "diagnosis",
+      "MECE",
+      "issue-trees"
+    ],
+    "use": "Detailed issue-tree construction, mathematical decomposition, MECE layering, examples, and practical use.",
+    "limitations": "Teaching/promotional examples are illustrative. Many important diagrams require visual inspection.",
+    "suggested_pages": "4-17,18-33,34-41,64-72",
+    "sha256": "8a425d25b7d6d67a825713acf98a42d8a815ef467f840f97334d77f591b21635",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S26",
+    "title": "Blockbuster Inc. — The Fall of a Giant",
+    "author": "João Clérigo de Almeida; Universidade Católica Portuguesa MSc dissertation",
+    "date": "2011-06",
+    "pages": 52,
+    "tags": [
+      "risk",
+      "innovation",
+      "adaptation"
+    ],
+    "use": "Teaching case applying dynamic capabilities to Blockbuster’s decline.",
+    "limitations": "Academic teaching interpretation, not identified single-cause proof; check original references for empirical claims.",
+    "suggested_pages": "2,5-7,12-31,45-49",
+    "sha256": "04783aef7cd4c8a63828f0dcffaf93d5475f4f0d70a6e5705dd744baf8e4e587",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S27",
+    "title": "Beyond Disruption — Bookey summary",
+    "author": "Bookey; summary of the book by W. Chan Kim and Renée Mauborgne",
+    "date": "Summary publication date not established",
+    "pages": 125,
+    "tags": [
+      "innovation",
+      "nondisruption"
+    ],
+    "use": "Secondary summary, chapter material, questions, and related content.",
+    "limitations": "Not the original Beyond Disruption book. Prefer S08 for the authors’ primary account of the three paths.",
+    "suggested_pages": "2-7,32-45",
+    "sha256": "a638efc088b8f767dc94051f48d18d34f99ea0f17853a175217b0388cdf964ab",
+    "availability": "not_bundled"
+  },
+  {
+    "id": "S28",
+    "title": "Blue Ocean Strategy, Expanded Edition",
+    "author": "W. Chan Kim and Renée Mauborgne; Harvard Business Review Press",
+    "date": "2015",
+    "pages": 316,
+    "tags": [
+      "innovation",
+      "blue-ocean",
+      "strategy"
+    ],
+    "use": "Full supplied expanded-edition text with strategy canvas, four actions, six paths, noncustomers, sequence, and execution.",
+    "limitations": "Historical examples are illustrative; sparse pages may be figures or blanks. PDF and printed pagination differ.",
+    "suggested_pages": "47-71,73-104,128-142,143-170,174-218,219-244",
+    "sha256": "c76b9f9aeebc70518b7a5b521e2dce7fdf09890a3bcbf6947916f0bf628c7306",
+    "availability": "not_bundled"
+  }
+]

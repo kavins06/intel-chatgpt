@@ -1,0 +1,4 @@
+interface:
+  display_name: "Forecasts and scenarios"
+  short_description: "Explore futures and define early-warning signals"
+  default_prompt: "Use $intel-foresight to develop scenarios, a resolvable forecast, and indicators to watch."

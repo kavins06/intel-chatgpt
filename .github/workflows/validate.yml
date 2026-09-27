@@ -1,0 +1,40 @@
+name: Validate public plugin
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Validate public distribution
+        run: python3 scripts/validate.py
+      - name: Test retrieval, evidence validation, and packaging
+        run: python3 -m unittest discover -s tests -v
+      - name: Build plugin archive
+        run: python3 scripts/package.py
+      - name: Verify checked-in download matches source
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          version = json.loads(Path('plugin.json').read_text())['version']
+          built = Path(f'dist/intel-{version}.zip').read_bytes()
+          published = Path(f'downloads/intel-{version}.zip').read_bytes()
+          assert hashlib.sha256(built).digest() == hashlib.sha256(published).digest(), 'Rebuild the checked-in download after editing package contents.'
+          PY
+      - name: Upload plugin archive
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: intel-plugin
+          path: dist/intel-*.zip
+          if-no-files-found: error

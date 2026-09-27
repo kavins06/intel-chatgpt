@@ -1,0 +1,4 @@
+interface:
+  display_name: "Risk and resilience"
+  short_description: "Trace failure pathways and strengthen decisions"
+  default_prompt: "Use $intel-risk to examine the failure modes, controls, and contingencies for this plan."

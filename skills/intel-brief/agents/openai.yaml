@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decision briefs"
+  short_description: "Turn research into clear, defensible recommendations"
+  default_prompt: "Use $intel-brief to turn these findings into a decision memo with evidence and next actions."

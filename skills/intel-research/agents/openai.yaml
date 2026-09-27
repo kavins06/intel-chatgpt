@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research and evidence"
+  short_description: "Collect, verify, and trace consequential claims"
+  default_prompt: "Use $intel-research to investigate this question, verify the key claims, and identify the evidence gaps."

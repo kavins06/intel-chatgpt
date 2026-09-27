@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diagnosis and hypotheses"
+  short_description: "Find causes and test competing explanations"
+  default_prompt: "Use $intel-diagnose to structure this problem and identify the best-supported explanation."
